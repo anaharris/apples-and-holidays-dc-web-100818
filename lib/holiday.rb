@@ -42,9 +42,6 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  seasons = []
-  holidays = []
-  supplies = []
   
   holiday_hash.each do |season, holiday|
     seasons << season.to_s.capitalize 
