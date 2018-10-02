@@ -56,7 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
       supplies << value
     end
   end
-  return 
+  
 end
 
 def all_holidays_with_bbq(holiday_hash)
