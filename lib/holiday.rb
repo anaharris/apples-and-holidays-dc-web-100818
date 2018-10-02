@@ -55,7 +55,7 @@ def all_supplies_in_holidays(holiday_hash)
         supplies << value
     end
   end
-  i = 0 
+   
   
 end
 
