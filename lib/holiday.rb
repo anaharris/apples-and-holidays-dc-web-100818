@@ -50,7 +50,7 @@ def all_supplies_in_holidays(holiday_hash)
     seasons << season.to_s.capitalize 
     
       holiday.each do |attribute, value|
-        holidays << holiday.to_s.split("_").join(" ").capitalize
+        holidays << holiday.to_s.split("_").map().join(" ").capitalize
         supplies << value
     end
   end
