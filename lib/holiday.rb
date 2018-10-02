@@ -49,9 +49,11 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     cap_season = season.to_s
     seasons << cap_season.capitalize 
+      
       holiday.each do |attribute, value|
       cap_holiday = (holiday.to_s).split
       holidays << (cap_holiday.capitalize).join(" ")
+    
     end
   end
 end
