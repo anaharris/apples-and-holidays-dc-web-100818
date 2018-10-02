@@ -50,9 +50,9 @@ def all_supplies_in_holidays(holiday_hash)
     seasons << (season.to_s).capitalize 
       
       holiday.each do |attribute, value|
-      cap_holiday = (holiday.to_s).split
-      holidays << (cap_holiday.capitalize).join(" ")
-      supplies << value
+        cap_holiday = (holiday.to_s).split
+        holidays << (cap_holiday.capitalize).join(" ")
+        supplies << value
     end
   end
   
