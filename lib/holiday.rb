@@ -56,8 +56,9 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     season.to_s 
     holiday.each do |attribute, value|
-      puts "#{holiday}:\n #{holiday.rjust(3)}: #{value.join(", ")}\n"
+      
     end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
