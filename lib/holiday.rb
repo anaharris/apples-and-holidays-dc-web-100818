@@ -52,7 +52,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   
   seasons = []
   holidays = []
-  
+  supplies = []
   holiday_hash.each do |season, holiday|
     
     holiday.each do |attribute, value|
