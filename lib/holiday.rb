@@ -44,10 +44,10 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_list = ""
   holiday_hash.each do |season, holiday|
-    holiday_list << "#{season.to_s.capitalize}: \n"
+    holiday_list += "#{season.to_s.capitalize}: \n"
     
       holiday.each do |attribute, value|
-        holiday_list << "\t#{holiday.to_s.split("_").map(&:capitalize).join(" ")}: #{value.join(", ")}"
+        holiday_list += "\t#{holiday.to_s.split("_").map(&:capitalize).join(" ")}: #{value.join(", ")}"
     end
   end
    return holiday_list
